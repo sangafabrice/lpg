@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Arc-en-Ciel CM — Le magazine web LGBTQ+ du Cameroun. Actualités, témoignages, droits humains et ressources pour la communauté queer camerounaise." />
+  <meta name="keywords" content="LGBTQ Cameroun, droits LGBTQ, magazine queer Afrique, communauté LGBTQ+ Cameroun, droits humains Cameroun" />
+  <meta name="author" content="Arc-en-Ciel CM" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Arc-en-Ciel CM — Magazine LGBTQ+ du Cameroun" />
+  <meta property="og:description" content="Le media indépendant qui amplifie les voix queer au Cameroun." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/hero_banner.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Arc-en-Ciel CM — Magazine LGBTQ+ Cameroun" />
+  <meta name="twitter:description" content="Le media indépendant qui amplifie les voix queer au Cameroun." />
+
+  <title>Arc-en-Ciel CM — Magazine LGBTQ+ du Cameroun</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏳️‍🌈</text></svg>" />
+</head>
+<body>
+
+  <!-- RAINBOW BAR -->
+  <div class="pride-bar" role="presentation" aria-hidden="true"></div>
+
+  <!-- =============================================
+       NAVIGATION
+       ============================================= -->
+  <header>
+    <nav class="nav" id="nav" role="navigation" aria-label="Navigation principale">
+      <div class="nav__container">
+
+        <!-- Logo -->
+        <a href="#accueil" class="nav__logo" aria-label="Arc-en-Ciel CM — Accueil">
+          <span>
+            <span class="nav__logo-rainbow">Arc-en-Ciel</span>
+            <span class="nav__logo-sub">Magazine · Cameroun</span>
+          </span>
+        </a>
+
+        <!-- Desktop links -->
+        <ul class="nav__links" role="list">
+          <li><a href="#actualites" class="nav__link" data-section="actualites">Actualités</a></li>
+          <li><a href="#droits" class="nav__link" data-section="droits">Droits & Justice</a></li>
+          <li><a href="#temoignages" class="nav__link" data-section="temoignages">Témoignages</a></li>
+          <li><a href="#ressources" class="nav__link" data-section="ressources">Ressources</a></li>
+          <li><a href="#newsletter" class="nav__link" data-section="newsletter">Newsletter</a></li>
+        </ul>
+
+        <!-- CTA + hamburger -->
+        <a href="#newsletter" class="nav__cta">Rejoindre la communauté</a>
+        <button class="nav__hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+
+    <!-- Mobile menu overlay -->
+    <div class="nav__mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu mobile">
+      <ul class="nav__mobile-links" role="list">
+        <li><a href="#actualites" class="nav__mobile-link">Actualités</a></li>
+        <li><a href="#droits" class="nav__mobile-link">Droits & Justice</a></li>
+        <li><a href="#temoignages" class="nav__mobile-link">Témoignages</a></li>
+        <li><a href="#ressources" class="nav__mobile-link">Ressources</a></li>
+        <li><a href="#newsletter" class="nav__mobile-link">Newsletter</a></li>
+      </ul>
+      <a href="#newsletter" class="btn btn--primary nav__mobile-link" style="font-size:1rem;padding:1rem 2rem;">
+        Rejoindre la communauté
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =============================================
+         HERO SECTION
+         ============================================= -->
+    <section class="hero" id="accueil" aria-labelledby="hero-title">
+
+      <div class="hero__bg" aria-hidden="true">
+        <img src="assets/hero_banner.png" alt="" class="hero__bg-image" />
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__orb hero__orb--3"></div>
+      </div>
+
+      <div class="hero__container">
+        <!-- Left: Text Content -->
+        <div class="hero__content">
+          <div class="hero__badge" role="note">
+            <span class="hero__badge-dot" aria-hidden="true"></span>
+            Magazine indépendant · Cameroun · 2025
+          </div>
+
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__title-line1">Nos voix,</span>
+            <span class="hero__title-line2">notre fierté.</span>
+          </h1>
+
+          <p class="hero__subtitle">
+            Arc-en-Ciel CM amplifie les histoires, défend les droits et construit
+            un espace sûr pour la communauté LGBTQ+ camerounaise. Parce que chaque
+            vie mérite d'être racontée.
+          </p>
+
+          <div class="hero__cta-group">
+            <a href="#actualites" class="btn btn--primary" id="hero-cta-primary">
+              Lire le magazine
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="#temoignages" class="btn btn--secondary" id="hero-cta-secondary">
+              Nos témoignages
+            </a>
+          </div>
+
+          <div class="hero__stats" role="list" aria-label="Statistiques de la communauté">
+            <div class="hero__stat" role="listitem">
+              <div class="hero__stat-number" data-target="12400" data-suffix="+">12&nbsp;400+</div>
+              <div class="hero__stat-label">Lecteurs</div>
+            </div>
+            <div class="hero__stat" role="listitem">
+              <div class="hero__stat-number" data-target="320" data-suffix="+">320+</div>
+              <div class="hero__stat-label">Articles publiés</div>
+            </div>
+            <div class="hero__stat" role="listitem">
+              <div class="hero__stat-number" data-target="8">8</div>
+              <div class="hero__stat-label">Villes couvertes</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Visual -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__image-wrapper">
+            <img
+              src="assets/hero_banner.png"
+              alt="Illustration colorée représentant la fierté arc-en-ciel et les motifs africains"
+              class="hero__image"
+            />
+          </div>
+          <div class="hero__image-badge">
+            <div class="hero__image-badge-icon" aria-hidden="true">🏳️‍🌈</div>
+            <div class="hero__image-badge-text">
+              <strong>En ce moment</strong>
+              <span>Actualités LGBTQ+ du Cameroun</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================
+         TICKER — Actualités en direct
+         ============================================= -->
+    <div class="ticker" role="marquee" aria-label="Fil d'actualités en temps réel">
+      <div class="ticker__inner">
+        <span class="ticker__item">
+          <span class="ticker__tag">Droits</span>
+          <span class="ticker__dot" aria-hidden="true"></span>
+          Nouvelle campagne de sensibilisation aux droits LGBTQ+ lancée à Yaoundé
+        </span>
+        <span class="ticker__item">
+          <span class="ticker__tag">Culture</span>
+          <span class="ticker__dot" aria-hidden="true"></span>
+          Festival de l'art queer africain : les artistes camerounais en vedette
+        </span>
+        <span class="ticker__item">
+          <span class="ticker__tag">Justice</span>
+          <span class="ticker__dot" aria-hidden="true"></span>
+          Rapport 2025 : L'accès aux soins de santé pour les personnes trans au Cameroun
+        </span>
+        <span class="ticker__item">
+          <span class="ticker__tag">Solidarité</span>
+          <span class="ticker__dot" aria-hidden="true"></span>
+          Collecte de fonds pour les familles LGBTQ+ victimes de discrimination à Douala
+        </span>
+        <span class="ticker__item">
+          <span class="ticker__tag">Interview</span>
+          <span class="ticker__dot" aria-hidden="true"></span>
+          Rencontre avec l'avocate militant pour la dépénalisation en Afrique centrale
+        </span>
+        <span class="ticker__item">
+          <span class="ticker__tag">Santé</span>
+          <span class="ticker__dot" aria-hidden="true"></span>
+          Accès aux soins : nouvelles cliniques amies de la communauté à Bafoussam
+        </span>
+        <span class="ticker__item">
+          <span class="ticker__tag">International</span>
+          <span class="ticker__dot" aria-hidden="true"></span>
+          ONU : Rapport sur la situation des droits LGBTQ+ en Afrique subsaharienne
+        </span>
+      </div>
+    </div>
+
+    <!-- =============================================
+         SECTION À LA UNE — Actualités
+         ============================================= -->
+    <section class="section section--dark" id="actualites" aria-labelledby="actualites-title">
+      <div class="container">
+
+        <div class="section__header">
+          <p class="section__eyebrow">À la une</p>
+          <h2 class="section__title" id="actualites-title">Les dernières actualités</h2>
+          <p class="section__desc">
+            Notre équipe de journalistes couvre les événements qui touchent
+            directement la communauté LGBTQ+ au Cameroun et en Afrique.
+          </p>
+        </div>
+
+        <div class="articles-grid" role="list" aria-label="Articles à la une">
+
+          <!-- Article Featured -->
+          <article class="article-card article-card--featured reveal" role="listitem">
+            <div class="article-card__image-wrapper">
+              <img
+                src="assets/article1.png"
+                alt="Illustration de motifs africains arc-en-ciel symbolisant la fierté LGBTQ+"
+                class="article-card__image"
+                loading="lazy"
+              />
+              <div class="article-card__overlay" aria-hidden="true"></div>
+              <span class="article-card__category cat--droits">Droits Humains</span>
+            </div>
+            <div class="article-card__content">
+              <div class="article-card__meta">
+                <time class="article-card__date" datetime="2026-08-01">1 août 2026</time>
+                <span class="article-card__read-time" aria-label="Temps de lecture">· 8 min de lecture</span>
+              </div>
+              <h3 class="article-card__title">
+                La résistance silencieuse : comment les organisations LGBTQ+ camerounaises
+                s'adaptent face aux lois répressives
+              </h3>
+              <p class="article-card__excerpt">
+                Dans un contexte légal hostile, des militants inventifs trouvent des façons
+                créatives de protéger et soutenir la communauté. Reportage au cœur de Yaoundé.
+              </p>
+              <div class="article-card__footer">
+                <div class="article-card__author">
+                  <div class="article-card__author-avatar" aria-hidden="true">AM</div>
+                  <span class="article-card__author-name">Amina Mbouda</span>
+                </div>
+                <div class="article-card__arrow" aria-label="Lire l'article" role="button" tabindex="0">→</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article Side -->
+          <article class="article-card article-card--side-1 reveal reveal-delay-1" role="listitem">
+            <div class="article-card__image-wrapper">
+              <img
+                src="assets/article2.png"
+                alt="Illustration abstraite de l'amour et de la liberté en couleurs africaines"
+                class="article-card__image"
+                loading="lazy"
+              />
+              <div class="article-card__overlay" aria-hidden="true"></div>
+              <span class="article-card__category cat--culture">Culture & Arts</span>
+            </div>
+            <div class="article-card__content">
+              <div class="article-card__meta">
+                <time class="article-card__date" datetime="2026-07-28">28 juil. 2026</time>
+                <span class="article-card__read-time">· 5 min</span>
+              </div>
+              <h3 class="article-card__title">
+                Kamer Queer Art : l'exposition qui brise les tabous à Douala
+              </h3>
+              <p class="article-card__excerpt">
+                Des artistes LGBTQ+ camerounais exposent leurs œuvres malgré les risques,
+                offrant un regard nouveau sur la queerité africaine.
+              </p>
+              <div class="article-card__footer">
+                <div class="article-card__author">
+                  <div class="article-card__author-avatar" aria-hidden="true">JN</div>
+                  <span class="article-card__author-name">Jean-Paul Nguetsop</span>
+                </div>
+                <div class="article-card__arrow" aria-label="Lire l'article" role="button" tabindex="0">→</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article Wide 1 -->
+          <article class="article-card article-card--wide reveal reveal-delay-2" role="listitem">
+            <div class="article-card__image-wrapper">
+              <img
+                src="assets/article3.png"
+                alt="Illustration abstraite de mains tendues vers la lumière, motifs africains"
+                class="article-card__image"
+                loading="lazy"
+              />
+              <div class="article-card__overlay" aria-hidden="true"></div>
+              <span class="article-card__category cat--sante">Santé & Bien-être</span>
+            </div>
+            <div class="article-card__content">
+              <div class="article-card__meta">
+                <time class="article-card__date" datetime="2026-07-22">22 juil. 2026</time>
+                <span class="article-card__read-time">· 6 min</span>
+              </div>
+              <h3 class="article-card__title">
+                Santé mentale LGBTQ+ : les ressources encore trop rares au Cameroun
+              </h3>
+              <p class="article-card__excerpt">
+                Dépression, anxiété, isolement... Les personnes queer font face à une crise silencieuse.
+                Des professionnels alliés se mobilisent.
+              </p>
+              <div class="article-card__footer">
+                <div class="article-card__author">
+                  <div class="article-card__author-avatar" aria-hidden="true">FK</div>
+                  <span class="article-card__author-name">Dr. Fatima Kamga</span>
+                </div>
+                <div class="article-card__arrow" aria-label="Lire l'article" role="button" tabindex="0">→</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article Wide 2 -->
+          <article class="article-card article-card--wide-2 reveal reveal-delay-3" role="listitem">
+            <div class="article-card__image-wrapper">
+              <img
+                src="assets/article1.png"
+                alt="Illustration motifs africains arc-en-ciel"
+                class="article-card__image"
+                loading="lazy"
+              />
+              <div class="article-card__overlay" aria-hidden="true"></div>
+              <span class="article-card__category cat--temoignage">Témoignage</span>
+            </div>
+            <div class="article-card__content">
+              <div class="article-card__meta">
+                <time class="article-card__date" datetime="2026-07-15">15 juil. 2026</time>
+                <span class="article-card__read-time">· 4 min</span>
+              </div>
+              <h3 class="article-card__title">
+                « J'ai dû fuir ma famille » : le témoignage poignant de Rodrigue, 24 ans
+              </h3>
+              <p class="article-card__excerpt">
+                Rodrigue partage son parcours d'exil intérieur et de reconstruction identitaire
+                en tant que jeune homme gay au Cameroun.
+              </p>
+              <div class="article-card__footer">
+                <div class="article-card__author">
+                  <div class="article-card__author-avatar" style="background:var(--gradient-gold);" aria-hidden="true">R</div>
+                  <span class="article-card__author-name">Rodrigue (anonymisé)</span>
+                </div>
+                <div class="article-card__arrow" aria-label="Lire l'article" role="button" tabindex="0">→</div>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.articles-grid -->
+
+        <div style="text-align:center;margin-top:var(--space-3xl);" class="reveal">
+          <a href="#" class="btn btn--secondary" id="voir-tous-articles">Voir tous les articles →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================
+         DROITS & JUSTICE SECTION
+         ============================================= -->
+    <section class="section droits section--darker" id="droits" aria-labelledby="droits-title">
+      <div class="container">
+
+        <div class="section__header section__header--center reveal">
+          <p class="section__eyebrow">Droits & Justice</p>
+          <h2 class="section__title" id="droits-title">Défendre nos droits ensemble</h2>
+          <p class="section__desc" style="margin:0 auto;">
+            Au Cameroun, l'article 347-1 du Code pénal punit l'homosexualité de jusqu'à 5 ans de prison.
+            Nous documentons, sensibilisons et agissons.
+          </p>
+        </div>
+
+        <div class="droits__grid">
+
+          <div class="droits__card droits__card--red reveal reveal-delay-1">
+            <div class="droits__card-icon" aria-hidden="true">⚖️</div>
+            <h3 class="droits__card-title">Cadre légal & criminalisation</h3>
+            <p class="droits__card-text">
+              Comprendre les lois qui pèsent sur la communauté LGBTQ+ au Cameroun.
+              Notre équipe juridique décrypte l'article 347-1 du Code pénal et ses implications
+              pour la vie quotidienne des personnes queer.
+            </p>
+            <a href="#" class="droits__card-link" id="droits-lien-legal">
+              Lire notre analyse juridique <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="droits__card droits__card--violet reveal reveal-delay-2">
+            <div class="droits__card-icon" aria-hidden="true">✊</div>
+            <h3 class="droits__card-title">Plaidoyer & Militantisme</h3>
+            <p class="droits__card-text">
+              Rejoindre les campagnes et les actions qui font bouger les lignes.
+              Découvrez comment des organisations sur le terrain transforment la résistance
+              en changement concret, malgré les risques.
+            </p>
+            <a href="#" class="droits__card-link" id="droits-lien-militantisme">
+              Voir nos actions <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="droits__card droits__card--teal reveal reveal-delay-3">
+            <div class="droits__card-icon" aria-hidden="true">🌍</div>
+            <h3 class="droits__card-title">Droits Internationaux</h3>
+            <p class="droits__card-text">
+              Comment les conventions internationales des droits humains s'appliquent
+              au Cameroun. ONU, Cour africaine des droits de l'homme : les recours
+              disponibles pour les personnes LGBTQ+.
+            </p>
+            <a href="#" class="droits__card-link" id="droits-lien-international">
+              Explorer les recours <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Stats bar -->
+        <div style="
+          display:flex;
+          gap:var(--space-xl);
+          justify-content:center;
+          flex-wrap:wrap;
+          margin-top:var(--space-3xl);
+          padding:var(--space-xl);
+          background:var(--color-bg-card);
+          border:1px solid var(--color-border);
+          border-radius:var(--radius-xl);
+        " class="reveal" role="list" aria-label="Chiffres clés">
+          <div style="text-align:center;" role="listitem">
+            <div style="font-family:var(--font-display);font-size:2.25rem;font-weight:900;background:linear-gradient(135deg,#ff3d5a,#ff8c42);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">5 ans</div>
+            <div style="font-family:var(--font-ui);font-size:0.8rem;color:var(--color-text-muted);margin-top:4px;text-transform:uppercase;letter-spacing:.05em;">peine max. article 347-1</div>
+          </div>
+          <div style="width:1px;background:var(--color-border);" aria-hidden="true"></div>
+          <div style="text-align:center;" role="listitem">
+            <div style="font-family:var(--font-display);font-size:2.25rem;font-weight:900;background:var(--gradient-cta);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">67</div>
+            <div style="font-family:var(--font-ui);font-size:0.8rem;color:var(--color-text-muted);margin-top:4px;text-transform:uppercase;letter-spacing:.05em;">pays criminalisent encore</div>
+          </div>
+          <div style="width:1px;background:var(--color-border);" aria-hidden="true"></div>
+          <div style="text-align:center;" role="listitem">
+            <div style="font-family:var(--font-display);font-size:2.25rem;font-weight:900;background:linear-gradient(135deg,#06d6a0,#118ab2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">34</div>
+            <div style="font-family:var(--font-ui);font-size:0.8rem;color:var(--color-text-muted);margin-top:4px;text-transform:uppercase;letter-spacing:.05em;">pays africains concernés</div>
+          </div>
+          <div style="width:1px;background:var(--color-border);" aria-hidden="true"></div>
+          <div style="text-align:center;" role="listitem">
+            <div style="font-family:var(--font-display);font-size:2.25rem;font-weight:900;background:var(--gradient-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">2025</div>
+            <div style="font-family:var(--font-ui);font-size:0.8rem;color:var(--color-text-muted);margin-top:4px;text-transform:uppercase;letter-spacing:.05em;">l'année de notre résistance</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================
+         TÉMOIGNAGES SECTION
+         ============================================= -->
+    <section class="section stories section--dark" id="temoignages" aria-labelledby="temoignages-title">
+      <div class="container">
+
+        <div class="section__header section__header--center reveal">
+          <p class="section__eyebrow">Témoignages</p>
+          <h2 class="section__title" id="temoignages-title">Des histoires vraies, des vies réelles</h2>
+          <p class="section__desc" style="margin:0 auto;">
+            Chaque témoignage est un acte de courage. Ces voix anonymisées racontent
+            la réalité de la communauté LGBTQ+ au Cameroun.
+          </p>
+        </div>
+
+        <div class="stories__grid" role="list" aria-label="Témoignages de la communauté">
+
+          <blockquote class="story-card reveal reveal-delay-1" role="listitem">
+            <span class="story-card__quote-icon" aria-hidden="true">"</span>
+            <p class="story-card__text">
+              Dans ma ville, je dois cacher qui je suis. Mais grâce à ce magazine, j'ai trouvé
+              une communauté qui me comprend, des mots pour me définir, et le courage de
+              continuer à exister pleinement.
+            </p>
+            <footer class="story-card__author">
+              <div class="story-card__avatar" aria-hidden="true">K</div>
+              <div>
+                <cite class="story-card__author-name">Kwame, 26 ans</cite>
+                <div class="story-card__author-role">Douala, Cameroun</div>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="story-card reveal reveal-delay-2" role="listitem">
+            <span class="story-card__quote-icon" aria-hidden="true">"</span>
+            <p class="story-card__text">
+              En tant que femme lesbienne et mère, j'ai longtemps cru que ces deux
+              identités étaient incompatibles. Arc-en-Ciel CM m'a montré que je ne suis pas
+              seule, et que ma famille mérite autant de respect que n'importe quelle autre.
+            </p>
+            <footer class="story-card__author">
+              <div class="story-card__avatar" style="background:linear-gradient(135deg,#ff6b9d,#ff8c42);" aria-hidden="true">A</div>
+              <div>
+                <cite class="story-card__author-name">Adèle, 34 ans</cite>
+                <div class="story-card__author-role">Yaoundé, Cameroun</div>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="story-card reveal reveal-delay-3" role="listitem">
+            <span class="story-card__quote-icon" aria-hidden="true">"</span>
+            <p class="story-card__text">
+              Ma transition a été le chemin le plus difficile de ma vie. Perdre sa famille,
+              ses amis, son emploi... Mais j'ai gagné quelque chose d'inestimable :
+              moi-même. Et la communauté qui m'accompagne dans ce voyage.
+            </p>
+            <footer class="story-card__author">
+              <div class="story-card__avatar" style="background:linear-gradient(135deg,#06d6a0,#118ab2);" aria-hidden="true">S</div>
+              <div>
+                <cite class="story-card__author-name">Safi (prénom modifié)</cite>
+                <div class="story-card__author-role">Bafoussam, Cameroun</div>
+              </div>
+            </footer>
+          </blockquote>
+
+        </div><!-- /.stories__grid -->
+
+        <div style="text-align:center;margin-top:var(--space-3xl);" class="reveal">
+          <a href="#" class="btn btn--secondary" id="partager-temoignage">
+            ✍️ Partager votre témoignage
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================
+         NEWSLETTER SECTION
+         ============================================= -->
+    <section class="section newsletter section--darker" id="newsletter" aria-labelledby="newsletter-title">
+      <div class="container">
+        <div class="newsletter__inner reveal">
+          <span class="newsletter__emoji" role="img" aria-label="Arc-en-ciel">🌈</span>
+          <h2 class="newsletter__title" id="newsletter-title">
+            Restez informé·e. Restez fier·ère.
+          </h2>
+          <p class="newsletter__desc">
+            Rejoignez plus de 12 000 abonné·es et recevez chaque semaine
+            nos articles, ressources et actualités LGBTQ+ directement dans votre boîte mail.
+            En toute confidentialité.
+          </p>
+          <form class="newsletter__form" id="newsletter-form" novalidate aria-label="Formulaire d'inscription à la newsletter">
+            <label for="newsletter-email" class="sr-only">Votre adresse email</label>
+            <input
+              type="email"
+              id="newsletter-email"
+              class="newsletter__input"
+              placeholder="votre@email.com"
+              autocomplete="email"
+              aria-required="true"
+              aria-describedby="newsletter-privacy"
+            />
+            <button type="submit" class="newsletter__submit" id="newsletter-submit">
+              S'inscrire
+            </button>
+          </form>
+          <p class="newsletter__privacy" id="newsletter-privacy">
+            🔒 Vos données sont protégées. Aucun spam. Désabonnement en un clic.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         RESSOURCES SECTION
+         ============================================= -->
+    <section class="section section--dark" id="ressources" aria-labelledby="ressources-title">
+      <div class="container">
+
+        <!-- SOS Urgence Banner -->
+        <div class="sos-banner reveal" role="alert" aria-live="polite">
+          <span class="sos-banner__icon" aria-hidden="true">🆘</span>
+          <div class="sos-banner__content">
+            <p class="sos-banner__title">Vous êtes en danger ou en détresse ?</p>
+            <p class="sos-banner__text">
+              Une ligne d'écoute confidentielle est disponible 24h/24 pour les personnes LGBTQ+ en situation de crise au Cameroun.
+            </p>
+          </div>
+          <button class="sos-banner__cta" id="sos-cta" aria-label="Appeler la ligne d'urgence LGBTQ+ au Cameroun">
+            📞 Ligne d'urgence
+          </button>
+        </div>
+
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Ressources</p>
+          <h2 class="section__title" id="ressources-title">Trouver de l'aide & du soutien</h2>
+          <p class="section__desc">
+            Des ressources soigneusement sélectionnées pour vous aider dans votre vie quotidienne.
+          </p>
+        </div>
+
+        <div class="ressources__grid" role="list" aria-label="Ressources disponibles">
+
+          <div class="ressource-card reveal reveal-delay-1" role="listitem">
+            <div class="ressource-card__icon" aria-hidden="true">🏥</div>
+            <h3 class="ressource-card__title">Santé & Soins</h3>
+            <p class="ressource-card__desc">Cliniques et professionnel·les de santé alliés à la communauté LGBTQ+ au Cameroun.</p>
+            <a href="#" class="ressource-card__link" id="res-sante">Voir la liste →</a>
+          </div>
+
+          <div class="ressource-card reveal reveal-delay-2" role="listitem">
+            <div class="ressource-card__icon" style="background:linear-gradient(135deg,#ff3d5a,#ff8c42);" aria-hidden="true">⚖️</div>
+            <h3 class="ressource-card__title">Aide Juridique</h3>
+            <p class="ressource-card__desc">Avocats et organisations qui offrent une assistance légale gratuite ou à faible coût.</p>
+            <a href="#" class="ressource-card__link" id="res-juridique">Trouver un avocat →</a>
+          </div>
+
+          <div class="ressource-card reveal reveal-delay-3" role="listitem">
+            <div class="ressource-card__icon" style="background:linear-gradient(135deg,#ffd23f,#f5c842);" aria-hidden="true">🤝</div>
+            <h3 class="ressource-card__title">Groupes de Soutien</h3>
+            <p class="ressource-card__desc">Espaces sûrs, groupes de parole et communautés pour briser l'isolement.</p>
+            <a href="#" class="ressource-card__link" id="res-soutien">Rejoindre un groupe →</a>
+          </div>
+
+          <div class="ressource-card reveal reveal-delay-4" role="listitem">
+            <div class="ressource-card__icon" style="background:linear-gradient(135deg,#9b5de5,#118ab2);" aria-hidden="true">🌐</div>
+            <h3 class="ressource-card__title">Asile & Protection</h3>
+            <p class="ressource-card__desc">Informations sur les demandes d'asile et la protection internationale pour les personnes LGBTQ+.</p>
+            <a href="#" class="ressource-card__link" id="res-asile">En savoir plus →</a>
+          </div>
+
+        </div><!-- /.ressources__grid -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="footer" role="contentinfo" aria-label="Pied de page Arc-en-Ciel CM">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Brand Column -->
+        <div class="footer__brand">
+          <a href="#accueil" class="nav__logo" aria-label="Arc-en-Ciel CM — Accueil" style="display:inline-flex;margin-bottom:var(--space-md);">
+            <span>
+              <span class="nav__logo-rainbow">Arc-en-Ciel</span>
+              <span class="nav__logo-sub">Magazine · Cameroun</span>
+            </span>
+          </a>
+          <p class="footer__brand-desc">
+            Le magazine web indépendant qui amplifie les voix LGBTQ+ au Cameroun.
+            Parce que l'amour et la dignité ne devraient jamais être des crimes.
+          </p>
+          <nav class="footer__social" aria-label="Réseaux sociaux">
+            <a href="#" class="footer__social-link" aria-label="Suivez-nous sur Twitter" id="social-twitter">𝕏</a>
+            <a href="#" class="footer__social-link" aria-label="Suivez-nous sur Instagram" id="social-instagram">📷</a>
+            <a href="#" class="footer__social-link" aria-label="Rejoignez-nous sur Telegram" id="social-telegram">✈️</a>
+            <a href="#" class="footer__social-link" aria-label="Écoutez-nous sur YouTube" id="social-youtube">▶️</a>
+          </nav>
+        </div>
+
+        <!-- Links Column 1 -->
+        <div>
+          <h3 class="footer__col-title">Magazine</h3>
+          <nav aria-label="Liens magazine">
+            <ul class="footer__links" role="list">
+              <li><a href="#actualites" class="footer__link">Actualités</a></li>
+              <li><a href="#" class="footer__link">Culture & Arts</a></li>
+              <li><a href="#" class="footer__link">Santé & Bien-être</a></li>
+              <li><a href="#temoignages" class="footer__link">Témoignages</a></li>
+              <li><a href="#" class="footer__link">Interviews</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Links Column 2 -->
+        <div>
+          <h3 class="footer__col-title">Communauté</h3>
+          <nav aria-label="Liens communauté">
+            <ul class="footer__links" role="list">
+              <li><a href="#droits" class="footer__link">Droits & Justice</a></li>
+              <li><a href="#ressources" class="footer__link">Ressources</a></li>
+              <li><a href="#newsletter" class="footer__link">Newsletter</a></li>
+              <li><a href="#" class="footer__link">Contribuer</a></li>
+              <li><a href="#" class="footer__link">Faire un don</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Links Column 3 -->
+        <div>
+          <h3 class="footer__col-title">À propos</h3>
+          <nav aria-label="Liens à propos">
+            <ul class="footer__links" role="list">
+              <li><a href="#" class="footer__link">Notre équipe</a></li>
+              <li><a href="#" class="footer__link">Notre mission</a></li>
+              <li><a href="#" class="footer__link">Presse & médias</a></li>
+              <li><a href="#" class="footer__link">Contact</a></li>
+              <li><a href="#" class="footer__link">Politique de confidentialité</a></li>
+            </ul>
+          </nav>
+        </div>
+
+      </div><!-- /.footer__grid -->
+
+      <!-- Footer bottom -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2026 Arc-en-Ciel CM. Tous droits réservés.
+        </p>
+        <div class="footer__pride-strip" role="presentation" aria-hidden="true"></div>
+        <p class="footer__manifesto">
+          « L'amour n'est pas un crime. La dignité ne se négocie pas. »
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Accessibility: skip link -->
+  <style>
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--gradient-cta);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 0 0 8px 0;
+      font-family: var(--font-ui);
+      font-weight: 700;
+      z-index: 10000;
+      transition: top 0.2s;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+  </style>
+  <a href="#accueil" class="skip-link">Aller au contenu principal</a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
